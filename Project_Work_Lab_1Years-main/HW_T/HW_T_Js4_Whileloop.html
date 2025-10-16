@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While loop</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+        p{
+           font-size: larger; 
+        }
+        h3{
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function numtable(){
+            let num = Number(document.getElementById("numcal").value)
+            console.log(num)
+            let round = 1;
+            do{
+                document.writeln(num+(" * ")+round +(" = ") +num * round + "<br>")
+                round++
+            }while(round<=12)
+        }
+
+    </script>
+    <h1>Math Table ( * )</h1>
+    <input type="number" id="numcal" placeholder="Math Num Table">
+    <button onclick="numtable()">Enter</button>
+    
+</body>
+</html>
